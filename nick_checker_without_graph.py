@@ -27,5 +27,7 @@ def check_user_exists(username):
     return chr(10).join(exists)
 
 input_username = input("Введите имя пользователя: ")
-exist_info = check_user_exists(input_username)
-print(exist_info)
+
+if __name__ == '__main__':
+    exist_info = check_user_exists(input_username)
+    print(exist_info)
